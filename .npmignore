@@ -14,7 +14,7 @@ results
 .nyc_output/
 coverage
 build
-node-addon-api
+ene-node-addon-api
 
 core
 deps/libffi/fficonfig.h

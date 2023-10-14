@@ -1,6 +1,6 @@
 {
 	"name": "ene-ffi-napi",
-	"version": "4.0.3",
+	"version": "0.0.1",
 	"license": "MIT",
 	"description": "A foreign function interface (FFI) for Node.js, N-API style",
 	"keywords": [
@@ -20,19 +20,19 @@
 	"main": "./lib/ffi",
 	"dependencies": {
 		"debug": "^4.1.1",
+		"ene-node-addon-api": "github:energypatrikhu/ene-node-addon-api",
 		"ene-node-gyp-build": "github:energypatrikhu/ene-node-gyp-build",
-		"get-uv-event-loop-napi-h": "^1.0.5",
-		"node-addon-api": "^3.0.0",
-		"ref-napi": "^2.0.1 || ^3.0.2",
-		"ref-struct-di": "^1.1.0"
+		"ene-ref-napi": "github:energypatrikhu/ene-ref-napi",
+		"ene-ref-struct-di": "github:energypatrikhu/ene-ref-struct-di",
+		"get-uv-event-loop-napi-h": "^1.0.5"
 	},
 	"devDependencies": {
+		"ene-ref-array-di": "github:energypatrikhu/ene-ref-array-di",
 		"fs-extra": "^9.0.0",
 		"mocha": "^7.1.1",
 		"nyc": "^15.0.0",
 		"prebuildify": "^4.0.0",
-		"prebuildify-ci": "^1.0.5",
-		"ref-array-di": "^1.2.1"
+		"prebuildify-ci": "^1.0.5"
 	},
 	"scripts": {
 		"install": "ene-node-gyp-build",

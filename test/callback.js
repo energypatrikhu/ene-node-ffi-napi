@@ -1,6 +1,6 @@
 'use strict';
 const assert = require('assert');
-const ref = require('ref-napi');
+const ref = require('ene-ref-napi');
 const ffi = require('../');
 const int = ref.types.int;
 const bindings = require('ene-node-gyp-build')(__dirname);

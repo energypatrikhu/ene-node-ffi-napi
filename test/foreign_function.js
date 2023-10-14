@@ -1,8 +1,8 @@
 'use strict';
 const assert = require('assert');
-const ref = require('ref-napi');
-const Array = require('ref-array-di')(ref);
-const Struct = require('ref-struct-di')(ref);
+const ref = require('ene-ref-napi');
+const Array = require('ene-ref-array-di')(ref);
+const Struct = require('ene-ref-struct-di')(ref);
 const ffi = require('../');
 const bindings = require('ene-node-gyp-build')(__dirname);
 
