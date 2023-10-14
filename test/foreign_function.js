@@ -4,7 +4,7 @@ const ref = require('ene-ref-napi');
 const Array = require('ene-ref-array-di')(ref);
 const Struct = require('ene-ref-struct-di')(ref);
 const ffi = require('../');
-const bindings = require('ene-node-gyp-build')(__dirname);
+const bindings = require('node-gyp')(__dirname);
 
 describe('ForeignFunction', function () {
 	afterEach(global.gc);

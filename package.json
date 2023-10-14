@@ -20,11 +20,11 @@
 	"main": "./lib/ffi",
 	"dependencies": {
 		"debug": "^4.1.1",
-		"ene-node-gyp-build": "github:energypatrikhu/ene-node-gyp-build",
 		"ene-ref-napi": "github:energypatrikhu/ene-ref-napi",
 		"ene-ref-struct-di": "github:energypatrikhu/ene-ref-struct-di",
 		"get-uv-event-loop-napi-h": "^1.0.5",
-		"node-addon-api": "^7.0.0"
+		"node-addon-api": "^7.0.0",
+		"node-gyp": "^9.4.0"
 	},
 	"devDependencies": {
 		"ene-ref-array-di": "github:energypatrikhu/ene-ref-array-di",
@@ -35,7 +35,7 @@
 		"prebuildify-ci": "^1.0.5"
 	},
 	"scripts": {
-		"install": "ene-node-gyp-build",
+		"install": "node-gyp rebuild",
 		"prebuild": "prebuildify --napi --tag-armv --tag-uv",
 		"prepack": "prebuildify-ci download && ([ $(ls prebuilds | wc -l) = '5' ] || (echo 'Some prebuilds are missing'; exit 1))",
 		"test": "node-gyp rebuild --directory test && nyc mocha --expose-gc --reporter spec"

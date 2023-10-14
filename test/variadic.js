@@ -2,7 +2,7 @@
 const assert = require('assert');
 const ref = require('ene-ref-napi');
 const ffi = require('../');
-const bindings = require('ene-node-gyp-build')(__dirname);
+const bindings = require('node-gyp')(__dirname);
 const sprintfPtr = bindings.sprintf;
 
 describe('variadic arguments', function () {

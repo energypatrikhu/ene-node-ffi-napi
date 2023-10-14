@@ -3,7 +3,7 @@ const assert = require('assert');
 const ref = require('ene-ref-napi');
 const ffi = require('../');
 const int = ref.types.int;
-const bindings = require('ene-node-gyp-build')(__dirname);
+const bindings = require('node-gyp')(__dirname);
 
 describe('Callback', function () {
 	afterEach(global.gc);
