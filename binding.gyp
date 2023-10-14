@@ -7,12 +7,12 @@
             'src/threaded_callback_invokation.cc'
         ],
         'include_dirs': [
-            "<!@(node -p \"require('ene-node-addon-api').include\")",
+            "<!@(node -p \"require('node-addon-api').include\")",
             "<!@(node -p \"require('get-uv-event-loop-napi-h').include\")",
             "<!@(node -p \"require('ene-ref-napi/lib/get-paths').include\")",
         ],
         'dependencies': [
-            "<!(node -p \"require('ene-node-addon-api').gyp\")",
+            "<!(node -p \"require('node-addon-api').gyp\")",
             "deps/libffi/libffi.gyp:ffi"
         ],
         'cflags!': ['-fno-exceptions'],

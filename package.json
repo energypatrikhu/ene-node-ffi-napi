@@ -20,11 +20,11 @@
 	"main": "./lib/ffi",
 	"dependencies": {
 		"debug": "^4.1.1",
-		"ene-node-addon-api": "github:energypatrikhu/ene-node-addon-api",
 		"ene-node-gyp-build": "github:energypatrikhu/ene-node-gyp-build",
 		"ene-ref-napi": "github:energypatrikhu/ene-ref-napi",
 		"ene-ref-struct-di": "github:energypatrikhu/ene-ref-struct-di",
-		"get-uv-event-loop-napi-h": "^1.0.5"
+		"get-uv-event-loop-napi-h": "^1.0.5",
+		"node-addon-api": "^7.0.0"
 	},
 	"devDependencies": {
 		"ene-ref-array-di": "github:energypatrikhu/ene-ref-array-di",
